@@ -1,4 +1,35 @@
-<html>
-  <h1> Stefan was here. </h1>
-  <iframe width="1900" height="1050" src="https://xd.adobe.com/embed/5342cfd4-6846-4b39-5119-15b0bafa3a75-2573/?fullscreen&hints=off" frameborder="0" allowfullscreen></iframe>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Iframe</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .iframe-container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+    .iframe-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="iframe-container">
+    <iframe src="https://xd.adobe.com/embed/5342cfd4-6846-4b39-5119-15b0bafa3a75-2573/?fullscreen&hints=off" allowfullscreen></iframe>
+  </div>
+</body>
 </html>
